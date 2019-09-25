@@ -22,7 +22,7 @@ Class ViewPDF{
 
 
         for($i = 0; $i <= 1; ++$i) {
-            if ($data['data']['gender'][$i] === "male") {
+            if ($data['data']['membership'][$i] === "gideon") {
                 if ($data['data']['roles'][$i] === "host") {
                     $content  = '<img src="images/Host_ID_Gideons.jpg" width="300" height="400" /><img src="images/Host_ID_Gideons.jpg" width="300" height="400" />';
                 } else if($data['data']['roles'][$i] === "co-host") {

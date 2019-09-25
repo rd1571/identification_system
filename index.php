@@ -27,7 +27,7 @@
 
         <div class="hero is-large is-info is-fullheight">
             <div class="columns is-centered">
-                <div class="column is-5-tablet is-5-desktop is-7-widescreen">
+                <div class="column is-5-tablet is-5-desktop is-8-widescreen">
                     <form class="box" method="POST">
 
                         <b-field grouped>
@@ -55,10 +55,10 @@
                                 </b-input>
                             </b-field>
 
-                            <b-field label="Gender">
-                                <b-select placeholder="Select Gender" name="data[gender][]" required>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                            <b-field label="Membership">
+                                <b-select placeholder="Select Membership" name="data[membership][]" required>
+                                    <option value="gideon">Gideon</option>
+                                    <option value="auxiliary">Auxiliary</option>
                                 </b-select>
                             </b-field>
 
@@ -96,10 +96,10 @@
                                 </b-input>
                             </b-field>
 
-                            <b-field label="Gender">
-                                <b-select placeholder="Select Gender" name="data[gender][]" required>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                            <b-field label="Membership">
+                                <b-select placeholder="Select Membership" name="data[membership][]" required>
+                                    <option value="gideon">Gideon</option>
+                                    <option value="auxiliary">Auxiliary</option>
                                 </b-select>
                             </b-field>
 
