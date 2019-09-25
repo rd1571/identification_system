@@ -27,7 +27,7 @@
 
         <div class="hero is-large is-info is-fullheight">
             <div class="columns is-centered">
-                <div class="column is-5-tablet is-5-desktop is-8-widescreen">
+                <div class="column is-5-tablet is-5-desktop is-10-widescreen">
                     <form class="box" method="POST">
 
                         <b-field grouped>
