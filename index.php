@@ -36,7 +36,7 @@
             <div class="hero-body">
                 <div class="container">
                     <div class="columns is-centered">
-                        <div class="column is-12-tablet is-10-desktop">
+                        <div class="column is-12-tablet is-12-desktop">
                             <form class="box" method="POST">
 
                                 <b-field grouped>
