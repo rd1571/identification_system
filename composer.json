@@ -1,0 +1,14 @@
+{
+    "name": "nextbpo.raymart/msa_identification",
+    "description": "MSA Identification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ram.mart17",
+            "email": "ram_mart1994@yahoo.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "dev-master"
+    }
+}

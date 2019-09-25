@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/buefy.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="app">
+            <!-- Buefy components goes here -->
+    
+            <div class="hero is-large is-info is-fullheight">
+                <div class="columns is-centered">
+                    <div class="column">
+                        <form class="box">
+    
+                            <b-field grouped>
+                                <b-field label="Firstname">
+                                    <b-input type="text"
+                                        name="firstname"
+                                        v-model="firstname"
+                                        required
+                                        placeholder="John">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Lastname">
+                                    <b-input type="text"
+                                        name="lastname"
+                                        v-model="lastname"
+                                        required
+                                        placeholder="Doe">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Campname">
+                                    <b-input type="text"
+                                        name="campname"
+                                        v-model="campname"
+                                        required
+                                        placeholder="Davao City">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Gender">
+                                    <b-select placeholder="Select Gender" name="gender" v-model="gender" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </b-select>
+                                </b-field>
+    
+                                <b-field label="Roles">
+                                    <b-select placeholder="Select Role" name="roles" v-model="roles" required>
+                                        <option value="host">Host</option>
+                                        <option value="co-host">Co-host</option>
+                                        <option value="member">Member</option>                                
+                                    </b-select>
+                                </b-field>
+                            </b-field>
+    
+                            <b-field grouped>
+                                <b-field label="Firstname">
+                                    <b-input type="text"
+                                        name="firstname"
+                                        v-model="firstname"
+                                        required
+                                        placeholder="John">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Lastname">
+                                    <b-input type="text"
+                                        name="lastname"
+                                        v-model="lastname"
+                                        required
+                                        placeholder="Doe">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Campname">
+                                    <b-input type="text"
+                                        name="campname"
+                                        v-model="campname"
+                                        required
+                                        placeholder="Davao City">
+                                    </b-input>
+                                </b-field>
+    
+                                <b-field label="Gender">
+                                    <b-select placeholder="Select Gender" name="gender" v-model="gender" required>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </b-select>
+                                </b-field>
+    
+                                <b-field label="Roles">
+                                    <b-select placeholder="Select Role" name="roles" v-model="roles" required>
+                                        <option value="host">Host</option>
+                                        <option value="co-host">Co-host</option>
+                                        <option value="member">Member</option>                                
+                                    </b-select>
+                                </b-field>
+                            </b-field>
+    
+                            <!-- <button type="submit" name="submit" class="button is-primary is-right">Generate ID</button> -->
+                            
+                            <button type="button" @click="download" class="button is-primary is-right">Generate ID</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="pdf" ref="content">
+            <div class="image_src">
+                <img src="images/Gideon_ID_Delegate.jpg" width="350" height="450" /><img src="images/Gideon_ID_Delegate.jpg" width="350" height="450" />
+            </div>
+
+            <div class="frontpage">
+                <div class="firstname">
+                    <span>Firstname</span>
+                </div>
+                <div class="lastname">
+                    <span>lastname</span>
+                </div>
+                <div class="campname">
+                    <span>campname</span>
+                </div>
+                    
+            </div>
+
+            <div class="backpage">
+                <div class="firstname">
+                    <span></span>
+                </div>
+                <div class="lastname">
+                    <span></span>
+                </div>
+                <div class="campname">
+                    <span></span>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        
+        <script src="js/vue.js"></script>
+        <!-- Full bundle -->
+        <script src="js/buefy.js"></script>
+        <script src="js/axios.js"></script>
+        <script src="renderer.js"></script>
+        <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+        <script>
+
+            new Vue({
+                el: '#app',
+                data: {
+                    firstname: "",
+                    lastname: "",
+                    campname: "",
+                    gender: "",
+                    roles: ""
+                },
+
+                methods: {
+                    onSubmit() {
+
+
+                        var imgData;
+                        html2canvas($("#pdf"), {
+                            useCORS: true,
+                            onrendered: function (canvas) {
+                                imgData = canvas.toDataURL(
+                                'image/png');
+                                var doc = new jsPDF('p', 'pt', 'a4');
+                                doc.addImage(imgData, 'PNG', 10, 10);
+                                doc.save('sample-file.pdf');
+                                //setTimeout(function () { window.open(imgData) }, 1000);
+                            }
+                        });
+
+
+                        // var doc = new jsPDF({
+                        //     unit: 'mm',
+                        //     format: 'letter'
+                        // });
+                        // doc.addHTML(document.getElementById('pdf'),function() {
+                        //     doc.save('html.pdf');
+                        // });
+
+                        // doc.html(document.getElementById('pdf'), {
+                        //     callback: function (doc) {
+                        //         doc.save();
+                        //     }
+                        // });
+                    },
+
+                    download() {
+                        const doc = new jsPDF();
+                        //const contentHtml = this.$refs.content.innerHTML;
+                        const contentHtml = document.getElementById('pdf').innerHTML = 'test';
+                        doc.fromHTML(contentHtml, 15, 15, {
+                            width: 170
+                        });
+                        doc.save("id.pdf");
+                    },
+                }
+            });
+        </script>
+
+        <style>
+            .column {
+                margin-top: 5rem;
+            }
+
+            .image_src {
+                width: 71%;
+                margin: 10px auto;
+            }
+
+            /* .frontpage .firstname {
+                border: 1px solid;
+                position: absolute;
+                width: 36%;
+                height: 50px;
+                font-size: 20px;
+                top: 17rem;
+                margin-left: -5px;
+                font-family: Arial;
+            }
+
+            .frontpage .lastname {
+                border: 1px solid;
+            }
+
+            .frontpage .campname {
+                border: 1px solid;
+            } */
+
+
+        </style>
+    </body>
+</html>
