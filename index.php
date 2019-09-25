@@ -25,96 +25,107 @@
     <div id="app">
         <!-- Buefy components goes here -->
 
-        <div class="hero is-large is-info is-fullheight">
-            <div class="columns is-centered">
-                <div class="column is-5-tablet is-5-desktop is-10-widescreen">
-                    <form class="box" method="POST">
+        <div class="hero is-large is-fullheight">
 
-                        <b-field grouped>
-                            <b-field label="Firstname">
-                                <b-input type="text"
-                                    name="data[firstname][]"
-                                    required
-                                    placeholder="John">
-                                </b-input>
-                            </b-field>
+            <div class="hero-head">
+                <div class="container has-text-centered">
+                    <img src="images/msa_convention_banner.png"/>
+                </div>
+            </div>
 
-                            <b-field label="Lastname">
-                                <b-input type="text"
-                                    name="data[lastname][]"
-                                    required
-                                    placeholder="Doe">
-                                </b-input>
-                            </b-field>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-5-tablet is-5-desktop is-10-widescreen">
+                            <form class="box" method="POST">
 
-                            <b-field label="Campname">
-                                <b-input type="text"
-                                    name="data[campname][]"
-                                    required
-                                    placeholder="Davao City">
-                                </b-input>
-                            </b-field>
+                                <b-field grouped>
+                                    <b-field label="Firstname">
+                                        <b-input type="text"
+                                            name="data[firstname][]"
+                                            required
+                                            placeholder="John">
+                                        </b-input>
+                                    </b-field>
 
-                            <b-field label="Membership">
-                                <b-select placeholder="Select Membership" name="data[membership][]" required>
-                                    <option value="gideon">Gideon</option>
-                                    <option value="auxiliary">Auxiliary</option>
-                                </b-select>
-                            </b-field>
+                                    <b-field label="Lastname">
+                                        <b-input type="text"
+                                            name="data[lastname][]"
+                                            required
+                                            placeholder="Doe">
+                                        </b-input>
+                                    </b-field>
 
-                            <b-field label="Roles">
-                                <b-select placeholder="Select Role" name="data[roles][]" required>
-                                    <option value="host">Host</option>
-                                    <option value="co-host">Co-host</option>
-                                    <option value="member">Member</option>                                
-                                </b-select>
-                            </b-field>
-                        </b-field>
+                                    <b-field label="Campname">
+                                        <b-input type="text"
+                                            name="data[campname][]"
+                                            required
+                                            placeholder="Davao City">
+                                        </b-input>
+                                    </b-field>
 
-                        <b-field grouped>
-                            <b-field label="Firstname">
-                                <b-input type="text"
-                                    name="data[firstname][]"
-                                    required
-                                    placeholder="John">
-                                </b-input>
-                            </b-field>
+                                    <b-field label="Membership">
+                                        <b-select placeholder="Select Membership" name="data[membership][]" required>
+                                            <option value="gideon">Gideon</option>
+                                            <option value="auxiliary">Auxiliary</option>
+                                        </b-select>
+                                    </b-field>
 
-                            <b-field label="Lastname">
-                                <b-input type="text"
-                                    name="data[lastname][]"
-                                    required
-                                    placeholder="Doe">
-                                </b-input>
-                            </b-field>
+                                    <b-field label="Roles">
+                                        <b-select placeholder="Select Role" name="data[roles][]" required>
+                                            <option value="host">Host</option>
+                                            <option value="co-host">Co-host</option>
+                                            <option value="member">Member</option>                                
+                                        </b-select>
+                                    </b-field>
+                                </b-field>
 
-                            <b-field label="Campname">
-                                <b-input type="text"
-                                    name="data[campname][]"
-                                    required
-                                    placeholder="Davao City">
-                                </b-input>
-                            </b-field>
+                                <b-field grouped>
+                                    <b-field label="Firstname">
+                                        <b-input type="text"
+                                            name="data[firstname][]"
+                                            required
+                                            placeholder="John">
+                                        </b-input>
+                                    </b-field>
 
-                            <b-field label="Membership">
-                                <b-select placeholder="Select Membership" name="data[membership][]" required>
-                                    <option value="gideon">Gideon</option>
-                                    <option value="auxiliary">Auxiliary</option>
-                                </b-select>
-                            </b-field>
+                                    <b-field label="Lastname">
+                                        <b-input type="text"
+                                            name="data[lastname][]"
+                                            required
+                                            placeholder="Doe">
+                                        </b-input>
+                                    </b-field>
 
-                            <b-field label="Roles">
-                                <b-select placeholder="Select Role" name="data[roles][]" required>
-                                    <option value="host">Host</option>
-                                    <option value="co-host">Co-host</option>
-                                    <option value="member">Member</option>                                
-                                </b-select>
-                            </b-field>
-                        </b-field>
+                                    <b-field label="Campname">
+                                        <b-input type="text"
+                                            name="data[campname][]"
+                                            required
+                                            placeholder="Davao City">
+                                        </b-input>
+                                    </b-field>
 
-                        <button type="submit" name="submit" class="button is-primary is-right">Generate ID</button>
-                        
-                    </form>
+                                    <b-field label="Membership">
+                                        <b-select placeholder="Select Membership" name="data[membership][]" required>
+                                            <option value="gideon">Gideon</option>
+                                            <option value="auxiliary">Auxiliary</option>
+                                        </b-select>
+                                    </b-field>
+
+                                    <b-field label="Roles">
+                                        <b-select placeholder="Select Role" name="data[roles][]" required>
+                                            <option value="host">Host</option>
+                                            <option value="co-host">Co-host</option>
+                                            <option value="member">Member</option>                                
+                                        </b-select>
+                                    </b-field>
+                                </b-field>
+
+                                <button type="submit" name="submit" class="button btn-color is-right">Generate ID</button>
+                                
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -133,8 +144,24 @@
     </script>
 
     <style>
-        .column {
+
+        .hero.is-large .hero-body {
+            padding-top: 0px;
+        }
+        /* .column {
             margin-top: 5rem;
+        }
+        .hero-head img {
+            margin:auto;
+        } */
+
+        .hero {
+            background: #2EBB7F;
+        }
+        
+        .btn-color {
+            background: #2EBB7F;
+            color: #FFFFFF;
         }
     </style>
 </body>
