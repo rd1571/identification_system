@@ -1,12 +1,13 @@
-.firstname0 {
+/* .firstname0 {
     position: absolute;
-    width: 36%;
+    width: 30%;
     height: 50px;
-    font-size: 24px;
-    top: 16.5rem;
+    font-size: 22px;
+    top: 15rem;
     margin-left: -5px;
     font-family: Arial;
     font-weight: bold;
+    border: 1px solid;
 }
 
 .lastname0 {
@@ -128,4 +129,133 @@
     font-family: Arial;
     font-weight: bold;
     margin-left: -20px;
+} */
+
+.firstname0 {
+    position: absolute;
+    width: 29%;
+    height: 50px;
+    font-size: 22px;
+    top: 15rem;
+    margin-left: -5px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.lastname0 {
+    position: absolute;
+    width: 29%;
+    height: 50px;
+    font-size: 20px;
+    top: 18rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.campname0 {
+    position: absolute;
+    width: 29%;
+    height: 50px;
+    font-size: 18px;
+    top: 20.5rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.firstnameBack0 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 22px;
+    top: 15rem;
+    left: 19.8rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.lastnameBack0 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    top: 18rem;
+    left: 19.8rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.campnameBack0 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 18px;
+    top: 20.5rem;
+    left: 19.8rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.firstname1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 22px;
+    top: 40.5rem;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.lastname1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    top: 43.5rem;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.campname1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 18px;
+    top: 46.5rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.firstnameBack1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 22px;
+    left: 19.8rem;
+    top: 40.5rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.lastnameBack1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    top: 43.5rem;
+    left: 19.8rem;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.campnameBack1 {
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    font-size: 18px;
+    top: 46.5rem;
+    left: 19.8rem;
+    font-family: Arial;
+    font-weight: bold;
 }
