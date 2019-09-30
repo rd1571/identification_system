@@ -115,7 +115,7 @@
                                     <b-field label="Roles">
                                         <b-select placeholder="Select Role" name="data[roles][]" required>
                                             <option value="host">Host</option>
-                                            <option value="co-host">Co-host</option>
+                                            <option value="cohost">Co-host</option>
                                             <option value="member">Member</option>                                
                                         </b-select>
                                     </b-field>
