@@ -36,7 +36,7 @@ Class ViewPDF{
                 if ($data['data']['roles'][$i] === "host") {
                     $content  = '<img src="images/Host_ID_Auxiliary.jpg" width="300" height="400" /><img src="images/Host_ID_Auxiliary.jpg" width="300" height="400" />';
     
-                } else if($$data['data']['roles'][$i] === "co-host") {
+                } else if($data['data']['roles'][$i] === "co-host") {
                     $content  = '<img src="images/Co-Host_ID_Auxiliary.jpg" width="300" height="400" /><img src="images/Co-Host_ID_Auxiliary.jpg" width="300" height="400" />';
                 } else {
                     //members
