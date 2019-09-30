@@ -27,24 +27,24 @@ Class ViewPDF{
         for($i = 0; $i <= 1; ++$i) {
             if ($data['data']['membership'][$i] === "gideon") {
                 if ($data['data']['roles'][$i] === "host") {
-                    $content  = '<img src="images/Host_ID_Gideons.jpg" width="280" height="380" /><img src="images/Host_ID_Gideons.jpg" width="280" height="380" />';
+                    $content  = '<img src="images/Host_ID_Gideons.jpg" width="240" height="350" /><img src="images/Host_ID_Gideons.jpg" width="240" height="350" />';
                 } else if($data['data']['roles'][$i] === "cohost") {
-                    $content  = '<img src="images/Co-Host_ID_Gideons.jpg" width="280" height="380" /><img src="images/Co-Host_ID_Gideons.jpg" width="280" height="380" />';
+                    $content  = '<img src="images/Co-Host_ID_Gideons.jpg" width="240" height="350" /><img src="images/Co-Host_ID_Gideons.jpg" width="240" height="350" />';
                 } else {
                     //members
-                    $content  = '<img src="images/Gideon_ID_Delegate.jpg" width="280" height="380" /><img src="images/Gideon_ID_Delegate.jpg" width="280" height="380" />';
+                    $content  = '<img src="images/Gideon_ID_Delegate.jpg" width="240" height="340" /><img src="images/Gideon_ID_Delegate.jpg" width="240" height="340" />';
                 }
             } else if ($data['data']['membership'][$i] === "auxiliary"){
     
                 if ($data['data']['roles'][$i] === "host") {
-                    $content  = '<img src="images/Host_ID_Auxiliary.jpg" width="280" height="380" /><img src="images/Host_ID_Auxiliary.jpg" width="280" height="380" />';
+                    $content  = '<img src="images/Host_ID_Auxiliary.jpg" width="240" height="340" /><img src="images/Host_ID_Auxiliary.jpg" width="240" height="340" />';
     
                 } else if($data['data']['roles'][$i] === "cohost") {
-                    $content  = '<img src="images/Co_Host_ID_Auxiliary.jpg" width="280" height="380" /><img src="images/Co_Host_ID_Auxiliary.jpg" width="280" height="380" />';
+                    $content  = '<img src="images/Co_Host_ID_Auxiliary.jpg" width="240" height="340" /><img src="images/Co_Host_ID_Auxiliary.jpg" width="240" height="340" />';
                     
                 } else {
                     //members
-                    $content  = '<img src="images/Auxiliary_ID_Delegate.jpg" width="300" height="400" /><img src="images/Auxiliary_ID_Delegate.jpg" width="300" height="400" />';
+                    $content  = '<img src="images/Auxiliary_ID_Delegate.jpg" width="240" height="340" /><img src="images/Auxiliary_ID_Delegate.jpg" width="240" height="340" />';
                 }
     
             }
