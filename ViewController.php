@@ -39,14 +39,9 @@ Class ViewPDF{
                 if ($data['data']['roles'][$i] === "host") {
                     $content  = '<img src="images/Host_ID_Auxiliary.jpg" width="280" height="380" /><img src="images/Host_ID_Auxiliary.jpg" width="280" height="380" />';
     
-<<<<<<< HEAD
-                } else if($data['data']['roles'][$i] === "co-host") {
-                    $content  = '<img src="images/Co-Host_ID_Auxiliary.jpg" width="300" height="400" /><img src="images/Co-Host_ID_Auxiliary.jpg" width="300" height="400" />';
-=======
                 } else if($data['data']['roles'][$i] === "cohost") {
                     $content  = '<img src="images/Co_Host_ID_Auxiliary.jpg" width="280" height="380" /><img src="images/Co_Host_ID_Auxiliary.jpg" width="280" height="380" />';
                     
->>>>>>> 6ff9988a73df5ca018f9cb43f62ce85f1beaa4df
                 } else {
                     //members
                     $content  = '<img src="images/Auxiliary_ID_Delegate.jpg" width="300" height="400" /><img src="images/Auxiliary_ID_Delegate.jpg" width="300" height="400" />';
