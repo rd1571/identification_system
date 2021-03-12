@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^6.0.10",
-    "jspdf": "^1.5.3"
+    "jspdf": "^2.3.1"
   }
 }
